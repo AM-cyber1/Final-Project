@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,33 @@ body {
   background-color: black;
   color: white;
   line-height: 1.6;
+  text-align: center;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 18px 0;
+  background-color: #0d0d0d;
+  border-bottom: 2px solid #222;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.top-nav a {
+  color: #0a84ff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+  padding: 8px 12px;
+}
+
+.top-nav a:hover {
+  color: white;
+  transform: scale(1.1);
 }
 
 .landing-body {
@@ -79,30 +107,11 @@ body {
   transform: rotateY(180deg);
 }
 
-.top-nav {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 15px;
-  background-color: #0d0d0d;
-}
-
-.top-nav a {
-  color: #0a84ff;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: 0.3s;
-}
-
-.top-nav a:hover {
-  color: white;
-  transform: scale(1.1);
-}
-
 .layout {
   display: flex;
   padding: 30px;
   gap: 30px;
+  justify-content: center;
 }
 
 .sidebar {
@@ -121,10 +130,10 @@ body {
   margin-top: 10px;
   line-height: 2;
 }
+
 .main-column {
   width: 75%;
 }
-
 
 .features {
   display: flex;
@@ -188,6 +197,7 @@ body {
   color: #0a84ff;
   margin-bottom: 10px;
 }
+
 .form-header {
   color: #0a84ff;
   margin-top: 30px;
@@ -231,6 +241,7 @@ body {
 .send-btn:hover {
   background-color: #08406b;
 }
+
 .payment-btn {
   display: inline-block;
   margin-top: 20px;
@@ -246,6 +257,7 @@ body {
 .payment-btn:hover {
   background-color: #08406b;
 }
+
 fieldset {
   border: 2px solid #0a84ff;
   margin-top: 20px;
@@ -269,5 +281,3 @@ legend {
   margin-bottom: 10px;
   font-size: 1rem;
 }
-
-
