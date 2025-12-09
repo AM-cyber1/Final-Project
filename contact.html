@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Below.snow – Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="top-nav">
+    <a href="home.html">Home</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="#">Products & Services</a>
+  </nav>
+
+  <div class="contact-box">
+    
+    <h1 class="contact-title">Contact Us</h1>
+
+    <div class="contact-grid">
+
+      <div class="location">
+        <h2>Location</h2>
+        <p>123 Snowfall Drive<br>Frostbite, MI 49000</p>
+
+        <p><strong>Phone:</strong> (555) 123-4567</p>
+        <p><strong>Email:</strong> info@belowsnow.com</p>
+      </div>
+
+      <div class="hours">
+        <h2>Hours of Operation</h2>
+        <p>Monday–Friday: 9am–5pm</p>
+        <p>Saturday: 10am–2pm</p>
+        <p>Sunday: Closed</p>
+      </div>
+
+    </div>
+
+    <h2 class="form-header">Send Us a Message</h2>
+
+    <form 
+      action="https://us-central1-alhsofunctions.cloudfunctions.net/alhsoFormExample"
+      method="POST"
+      class="contact-form"
+    >
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="user-name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="user-email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="user-message" rows="5" required></textarea>
+
+      <button type="submit" class="send-btn">Send</button>
+
+    </form>
+  <a href="payment.html" class="payment-btn">Make a Payment</a>
+
+  </div>
+
+</body>
+</html>
