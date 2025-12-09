@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Below.snow – Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="top-nav">
+    <a href="home.html">Home</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Products & Services</a>
+  </nav>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <img src="https://via.placeholder.com/180x120?text=Logo" class="logo">
+      <ul>
+        <li>Fast Snow Removal</li>
+        <li>Seasonal Contracts</li>
+        <li>24/7 Emergency Service</li>
+      </ul>
+    </aside>
+
+    <main class="main-column">
+      <h1>Welcome!</h1>
+      <p>
+        Below.Snow provides premium snow removal services designed to keep your
+        home or business clean, safe, and prepared for any storm. Professional,
+        fast, and always reliable.
+      </p>
+    </main>
+
+  </div>
+  <button id="hidebutton" onclick="hideOffers()">Hide Offers</button>
+
+ <section class="features" id="specialoffers">
+    <div class="feature-box box1">
+      <h2>Winter Special</h2>
+      <p>Save 20% on early-season snow removal packages!</p>
+      <button class="learn-btn">Learn More</button>
+    </div>
+
+    <div class="feature-box box2">
+      <h2>Business Plans</h2>
+      <p>Reliable commercial snow clearing for all property sizes.</p>
+      <button class="learn-btn">Learn More</button>
+    </div>
+  </section>
+<script>
+  function hideOffers() {
+    let x = document.getElementById("specialoffers");
+    let y = document.getElementById("hidebutton");
+
+    x.style.display = "none";
+    y.style.display = "none";
+  }
+</script>
+
+</body>
+</html>
